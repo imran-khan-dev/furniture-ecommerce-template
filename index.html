@@ -1,0 +1,1901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce Template</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Screen Size Warning -->
+    <div id="screen-size-warning"
+        class="hidden fixed top-0 left-0 right-0 bg-red-600 text-white p-10 text-4xl text-center z-50">
+        This website must be visited from at least a 1450px screen size.
+    </div>
+
+    <!-- Navigation Start -->
+    <!-- Top -->
+    <div class="flex items-center justify-center w-full h-[2.8125rem] bg-secondary">
+        <div class="flex items-center justify-between w-main-width">
+            <!-- Shipping -->
+            <a href="" class="flex items-center justify-center">
+                <img class="w-4 h-4" src="img/check-icon.svg" alt="check">
+                <span class="font-inter text-white text-[0.8125rem] leading-110% ml-[0.5rem]">Free shipping on all
+                    orders
+                    over $50</span>
+            </a>
+            <!-- Links -->
+            <div class="flex items-center justify-center space-x-6">
+                <!-- Language -->
+                <a href="" class="flex items-center justify-center">
+                    <span class="font-inter text-white text-[0.8125rem] leading-110%">Eng</span>
+                    <img class="ml-[0.5rem]" src="img/down-arrow.svg" alt="down-arrow">
+                </a>
+                <a href="" class="font-inter text-white text-[0.8125rem] leading-110% cursor-pointer">Faqs</a>
+                <a href="" class="flex items-center justify-center">
+                    <img src="img/alert-circle.svg" alt="alert-circle">
+                    <span class="font-inter text-white text-[0.8125rem] ml-[0.5rem] leading-110%">Need Help</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Middle -->
+    <div class="flex items-center justify-center w-full h-[5.25rem] bg-light-gray">
+        <div class="flex items-center justify-between w-main-width">
+            <a href="#homepage" class="flex items-center">
+                <img src="img/logo-icon.svg" alt="Logo">
+                <span class="font-inter font-medium text-[1.625rem] text-secondary leading-120% ml-2">Comforty</span>
+            </a>
+            <div class="flex items-center py-[0.6875rem] px-[1rem] bg-white rounded-lg">
+                <input type="text" placeholder="Search here..."
+                    class="w-[25.8125rem] font-inter text-base text-cool-gray leading-120% border outline-none border-none bg-transparent" />
+                <img class="w-22px h-22px cursor-pointer" src="img/search-icon.svg" alt="search-icon">
+            </div>
+            <div class="flex items-center space-x-3">
+                <div class="flex items-center bg-white px-4 py-11px rounded-lg cursor-pointer">
+                    <img class="w-22px h-22px" src="img/cart.svg" alt="cart">
+                    <span class="font-inter font-medium text-xs text-secondary leading-110% ml-2">Cart</span>
+                    <div class="bg-quaternary w-5 h-5 rounded-full flex items-center justify-center ml-3">
+                        <span class="font-DM-sans font-medium text-[0.625rem] text-white leading-100%">2</span>
+                    </div>
+                </div>
+                <div class="p-11px bg-white rounded-lg cursor-pointer">
+                    <img class="w-22px h-22px" src="img/heart.svg" alt="heart">
+                </div>
+                <div class="p-11px bg-white rounded-lg cursor-pointer">
+                    <img class="w-22px h-22px" src="img/profile.svg" alt="heart">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bottom -->
+    <div class="flex items-center justify-center w-full h-[4.6875rem]">
+        <div class="flex items-center justify-between w-main-width">
+            <div class="flex items-center">
+                <button
+                    class="flex items-center px-6 py-[1.03125rem] rounded-lg border border-sliver-gray hover:border-primary">
+                    <img src="img/category-icon.svg" alt="menu-icon">
+                    <span class="ml-4 font-inter font-medium text-sm leading-110% text-secondary">All
+                        Categories</span>
+                </button>
+                <nav class="ml-8">
+                    <ul class="flex space-x-4 font-inter font-medium text-sm text-dim-gray leading-110%">
+                        <li><a href="#" class="hover:text-primary">Home</a></li>
+                        <li><a href="#" class="hover:text-primary">Shop</a></li>
+                        <li><a href="#" class="hover:text-primary">Product</a></li>
+                        <li><a href="#" class="hover:text-primary">Pages</a></li>
+                        <li><a href="#" class="hover:text-primary">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="flex items-center">
+                <span class="font-inter text-sm text-dim-gray leading-110% mr-2">Contact:</span>
+                <span class="font-inter font-medium text-sm text-secondary leading-110%">(808) 555-0111</span>
+            </div>
+        </div>
+
+    </div> <!-- Navigation End -->
+
+    <!-- Header -->
+    <div class="header">
+        <div class="header-slider-container">
+            <div class="header-slider">
+                <div class="header-slide">
+                    <div class="flex items-center justify-center">
+                        <div class="slide-hero-text-container">
+                            <span class="font-inter text-sm text-secondary leading-100% tracking-[12%] mb-2">WELCOME TO
+                                CHAIRY</span>
+                            <h1 class="header-slide-heading-text">Best
+                                Furniture
+                                Collection for your interior.</h1>
+                            <button class="header-slide-cta-btn">Shop
+                                Now<span class="ml-[20px]"><img src="img/right-arrow-btn-cta.svg"
+                                        alt="right-arrow-btn-cta"></span></button>
+                        </div>
+                        <div class="basis-1/2 ml-4 relative flex items-center justify-center">
+                            <img class="header-slide-img absolute" src="img/header-slide/Product Image1.png"
+                                alt="Image 1">
+                            <div class="absolute top-[-20.8125rem] right-[0]">
+                                <div class="discount-container-inner"><img src="img/discount-bg.svg" alt="">
+                                    <div class="discount-position">
+                                        <span class="discount-number">60%</span>
+                                        <span class="discount-text">Discount</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-slide">
+                    <div class="flex items-center justify-center">
+                        <div class="slide-hero-text-container">
+                            <h2 class="header-slide-heading-text">Elegant Designs to Elevate Your Space.</h2>
+                            <button class="header-slide-cta-btn">Shop
+                                Now<span class="ml-[20px]"><img src="img/right-arrow-btn-cta.svg"
+                                        alt="right-arrow-btn-cta"></span></button>
+                        </div>
+                        <div class="basis-1/2 ml-4 relative flex items-center justify-center">
+                            <img class="header-slide-img absolute" src="img/header-slide/Product Image1.png"
+                                alt="Image 1">
+                            <div class="absolute top-[-20.8125rem] right-[0]">
+                                <div class="discount-container-inner"><img src="img/discount-bg.svg" alt="">
+                                    <div class="discount-position">
+                                        <span class="discount-number">58%</span>
+                                        <span class="discount-text">Discount</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-slide">
+                    <div class="flex items-center justify-center">
+                        <div class="slide-hero-text-container">
+                            <h2 class="header-slide-heading-text">Transform Your Home with Stylish Furniture.</h2>
+                            <button class="header-slide-cta-btn">Shop
+                                Now<span class="ml-[20px]"><img src="img/right-arrow-btn-cta.svg"
+                                        alt="right-arrow-btn-cta"></span></button>
+                        </div>
+                        <div class="basis-1/2 ml-4 relative flex items-center justify-center">
+                            <img class="header-slide-img absolute" src="img/header-slide/Product Image1.png"
+                                alt="Image 1">
+                            <div class="absolute top-[-20.8125rem] right-[0]">
+                                <div class="discount-container-inner"><img src="img/discount-bg.svg" alt="">
+                                    <div class="discount-position">
+                                        <span class="discount-number">54%</span>
+                                        <span class="discount-text">Discount</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dots-container absolute bottom-4 left-1/2 transform -translate-x-1/2 flex">
+            <span class="dot w-3 h-3 bg-gray-300 rounded-full mx-1 cursor-pointer" onclick="showHeaderSlide(0)"></span>
+            <span class="dot w-3 h-3 bg-gray-300 rounded-full mx-1 cursor-pointer" onclick="showHeaderSlide(1)"></span>
+            <span class="dot w-3 h-3 bg-gray-300 rounded-full mx-1 cursor-pointer" onclick="showHeaderSlide(2)"></span>
+        </div>
+
+        <button class="prev" onclick="prevHeaderSlide()"><img src="img/slide-left-btn-arrow.svg" alt=""></button>
+        <button class="next" onclick="nextHeaderSlide()"><img class="rotate-180" src="img/slide-left-btn-arrow.svg"
+                alt=""></button>
+
+    </div>
+
+    <!-- Feature -->
+    <div class="feature-container">
+        <div class="flex items-center">
+            <img src="img/box.svg" alt="Discount">
+            <div class="ml-4">
+                <h3 class="font-inter font-medium text-lg text-secondary leading-110%">Discount</h3>
+                <p class="font-inter text-15px text-cool-gray leading-110% mt-6px">Every week new sales</p>
+            </div>
+        </div>
+        <div class="flex items-center">
+            <img src="img/delivery-truck.svg" alt="Free-delivery">
+            <div class="ml-4">
+                <h3 class="font-inter font-medium text-lg text-secondary leading-110%">Free Delivery</h3>
+                <p class="font-inter text-15px text-cool-gray leading-110% mt-6px">100% Free for all orders</p>
+            </div>
+        </div>
+        <div class="flex items-center">
+            <img src="img/24-hours.svg" alt="Support">
+            <div class="ml-4">
+                <h3 class="font-inter font-medium text-lg text-secondary leading-110%">Great Support 24/7</h3>
+                <p class="font-inter text-15px text-cool-gray leading-110% mt-6px">We care your expriences</p>
+            </div>
+        </div>
+        <div class="flex items-center">
+            <img src="img/shield.svg" alt="Secure-payment">
+            <div class="ml-4">
+                <h3 class="font-inter font-medium text-lg text-secondary leading-110%">Secure Payment</h3>
+                <p class="font-inter text-15px text-cool-gray leading-110% mt-6px">100% Secure Payment Method</p>
+            </div>
+        </div>
+    </div> <!-- Feature End -->
+
+    <!-- Company Logos -->
+    <div class="flex items-center justify-between w-main-width mx-auto mt-[6.3125rem] mb-8">
+        <img src="img/zaiper-logo.svg" alt="zaiper-logo h-[2.3167rem]">
+        <img src="img/pipedrive-logo.svg" alt="pipedrive-logo">
+        <img src="img/CIB-BANK-logo.svg" alt="CIB-BANK-logo">
+        <img src="img/Z-logo.svg" alt="Z-logo">
+        <img src="img/Burn-Toast-logo.svg" alt="Burn-Toast-logo">
+        <img src="img/Panda-doc-logo.svg" alt="Panda-doc-logo">
+        <img src="img/moz-logo.svg" alt="moz-logo">
+    </div>
+
+    <!-- Feature Products Slide -->
+    <div class="w-main-width mx-auto mb-20">
+        <div class="flex items-center justify-between mb-10">
+            <h2 class="h2-style">Featured Products</h2>
+            <div class="flex items-center justify-between">
+                <button class="arrow-style rotate-180 mr-[18px]" onclick="prevFeatureSlide()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.5 7.5L20 12M20 12L15.5 16.5M20 12H4" stroke="red" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="arrow-style" onclick="nextFeatureSlide()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.5 7.5L20 12M20 12L15.5 16.5M20 12H4" stroke="red" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="feature-product-container">
+            <div class="feature-product-slider">
+                <!-- New Product Item -->
+                <div class="product-item-container feature-slide ">
+                    <img class="mb-14px" src="img/product-img/product-1.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="product-tag-container">
+                        <div class="new-product-tag-container">
+                            <span class="product-tag-text-style">New</span>
+                        </div>
+                        <div class="product-love-favorite-style"><img src="img/heart-of-product.svg"
+                                alt="choose-favorite-product"></div>
+                    </div>
+                </div>
+                <!-- Sales Product Item -->
+                <div class="product-item-container feature-slide">
+                    <img class="mb-14px" src="img/product-img/product-2.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <div class="flex items-center">
+                                <span class="product-price-style">$20</span>
+                                <span
+                                    class="line-through text-cool-gray font-inter text-sm leading-110% ml-1">$30</span>
+                            </div>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="sales-product-tag-container">
+                        <span class="product-tag-text-style">Sales</span>
+                    </div>
+                </div>
+                <!-- Regular Product Item -->
+                <div class="product-item-container feature-slide">
+                    <img class="mb-14px" src="img/product-img/product-3.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item-container feature-slide">
+                    <img class="mb-14px" src="img/product-img/product-4.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item-container feature-slide">
+                    <img class="mb-14px" src="img/product-img/product-5.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item-container feature-slide">
+                    <img class="mb-14px" src="img/product-img/product-6.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item-container feature-slide">
+                    <img class="mb-14px" src="img/product-img/product-7.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Categories -->
+    <div class="w-full flex items-center justify-center">
+        <div class="w-main-width mb-20 mx-auto overflow-hidden">
+            <div class="flex items-center justify-between mb-10">
+                <h2 class="h2-style">Top Categories</h2>
+                <div class="flex items-center justify-between">
+                    <button class="arrow-style rotate-180 mr-[18px]" onclick="prevCategory()">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.5 7.5L20 12M20 12L15.5 16.5M20 12H4" stroke="red" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button class="arrow-style" onclick="nextCategory()">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.5 7.5L20 12M20 12L15.5 16.5M20 12H4" stroke="red" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="category-item-slider">
+                <div class="category-item-container">
+                    <img src="img/category-slide/category-1.png" alt="wing-chair">
+                    <div class="category-item-overlay">
+                        <div class="m-5">
+                            <h3 class="category-item-h3-style">Wing Chair</h3>
+                            <span class="category-item-product-count">3,584 Products</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-item-container">
+                    <img src="img/category-slide/category-2.png" alt="wing-chair">
+                    <div class="category-item-overlay">
+                        <div class="m-5">
+                            <h3 class="category-item-h3-style">Wooden Chair</h3>
+                            <span class="category-item-product-count">157 Products</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-item-container">
+                    <img src="img/category-slide/category-3.png" alt="wing-chair">
+                    <div class="category-item-overlay">
+                        <div class="m-5">
+                            <h3 class="category-item-h3-style">Desk Chair</h3>
+                            <span class="category-item-product-count">154 Products</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-item-container">
+                    <img src="img/category-slide/category-4.png" alt="wing-chair">
+                    <div class="category-item-overlay">
+                        <div class="m-5">
+                            <h3 class="category-item-h3-style">Wing Chair</h3>
+                            <span class="category-item-product-count">3,584 Products</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-item-container">
+                    <img src="img/category-slide/category-5.png" alt="wing-chair">
+                    <div class="category-item-overlay">
+                        <div class="m-5">
+                            <h3 class="category-item-h3-style">Wooden Chair</h3>
+                            <span class="category-item-product-count">157 Products</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-item-container">
+                    <img src="img/category-slide/category-6.png" alt="wing-chair">
+                    <div class="category-item-overlay">
+                        <div class="m-5">
+                            <h3 class="category-item-h3-style">Desk Chair</h3>
+                            <span class="category-item-product-count">154 Products</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Products -->
+    <div class="w-main-width mx-auto mb-20">
+        <!-- Nav -->
+        <div class="flex flex-col items-center justify-center">
+            <h2 class="h2-style mb-4">Our Products</h2>
+            <ul class="our-product-nav">
+                <li class="products-btn all-default" data-value="1">ALL</li>
+                <li class="products-btn" data-value="2">NEWEST</li>
+                <li class="products-btn" data-value="3">TRENDING</li>
+                <li class="products-btn" data-value="4">BEST SELLERS</li>
+                <li class="products-btn" data-value="5">FEATURED</li>
+
+            </ul>
+        </div>
+
+        <!-- Product List -->
+        <div class="dynamicHidden all-products hidden">
+            <!-- 1st line -->
+            <div class="flex items-center justify-center space-x-6">
+                <!-- New Product Item -->
+                <div class="product-item-container feature-slide ">
+                    <img class="mb-14px" src="img/product-img/product-1.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="product-tag-container">
+                        <div class="new-product-tag-container">
+                            <span class="product-tag-text-style">New</span>
+                        </div>
+                        <div class="product-love-favorite-style"><img src="img/heart-of-product.svg"
+                                alt="choose-favorite-product"></div>
+                    </div>
+                </div>
+                <!-- Sales Product Item -->
+                <div class="product-item-container feature-slide">
+                    <img class="mb-14px" src="img/product-img/product-2.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <div class="flex items-center">
+                                <span class="product-price-style">$20</span>
+                                <span
+                                    class="line-through text-cool-gray font-inter text-sm leading-110% ml-1">$30</span>
+                            </div>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="sales-product-tag-container">
+                        <span class="product-tag-text-style">Sales</span>
+                    </div>
+                </div>
+                <!-- Regular Product Item -->
+                <div class="product-item-container feature-slide">
+                    <img class="mb-14px" src="img/product-img/product-3.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item-container feature-slide">
+                    <img class="mb-14px" src="img/product-img/product-4.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd line -->
+            <div class="flex items-center justify-center space-x-6 mt-[2.5rem]">
+                <!-- New Product Item -->
+                <div class="product-item-container feature-slide">
+                    <img class="mb-14px" src="img/product-img/product-5.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="product-tag-container">
+                        <div class="new-product-tag-container">
+                            <span class="product-tag-text-style">New</span>
+                        </div>
+                        <div class="product-love-favorite-style"><img src="img/heart-of-product.svg"
+                                alt="choose-favorite-product"></div>
+                    </div>
+                </div>
+                <!-- Sales Product Item -->
+                <div class="product-item-container feature-slide">
+                    <img class="mb-14px" src="img/product-img/product-6.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <div class="flex items-center">
+                                <span class="product-price-style">$20</span>
+                                <span
+                                    class="line-through text-cool-gray font-inter text-sm leading-110% ml-1">$30</span>
+                            </div>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="sales-product-tag-container">
+                        <span class="product-tag-text-style">Sales</span>
+                    </div>
+                </div>
+                <!-- Regular Product Item -->
+                <div class="product-item-container feature-slide">
+                    <img class="mb-14px" src="img/product-img/product-7.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item-container feature-slide">
+                    <img class="mb-14px" src="img/product-img/product-1.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dynamicHidden newest-products hidden">
+            <div class="flex items-center justify-center space-x-6">
+                <!-- New Product Item -->
+                <div class="product-item-container">
+                    <img class="mb-14px" src="img/product-img/product-1.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="product-tag-container">
+                        <div class="new-product-tag-container">
+                            <span class="product-tag-text-style">New</span>
+                        </div>
+                        <div class="product-love-favorite-style"><img src="img/heart-of-product.svg"
+                                alt="choose-favorite-product"></div>
+                    </div>
+                </div>
+                <div class="product-item-container">
+                    <img class="mb-14px" src="img/product-img/product-2.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="product-tag-container">
+                        <div class="new-product-tag-container">
+                            <span class="product-tag-text-style">New</span>
+                        </div>
+                        <div class="product-love-favorite-style"><img src="img/heart-of-product.svg"
+                                alt="choose-favorite-product"></div>
+                    </div>
+                </div>
+                <div class="product-item-container">
+                    <img class="mb-14px" src="img/product-img/product-3.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="product-tag-container">
+                        <div class="new-product-tag-container">
+                            <span class="product-tag-text-style">New</span>
+                        </div>
+                        <div class="product-love-favorite-style"><img src="img/heart-of-product.svg"
+                                alt="choose-favorite-product"></div>
+                    </div>
+                </div>
+                <div class="product-item-container">
+                    <img class="mb-14px" src="img/product-img/product-4.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="product-tag-container">
+                        <div class="new-product-tag-container">
+                            <span class="product-tag-text-style">New</span>
+                        </div>
+                        <div class="product-love-favorite-style"><img src="img/heart-of-product.svg"
+                                alt="choose-favorite-product"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dynamicHidden trending-products hidden">
+            <div class="flex items-center justify-center space-x-6">
+                <!-- Regular Product Item -->
+                <div class="product-item-container">
+                    <img class="mb-14px" src="img/product-img/product-5.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item-container">
+                    <img class="mb-14px" src="img/product-img/product-6.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item-container">
+                    <img class="mb-14px" src="img/product-img/product-4.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item-container">
+                    <img class="mb-14px" src="img/product-img/product-2.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dynamicHidden best-sellers-products hidden">
+            <div class="flex items-center justify-center space-x-6">
+                <!-- Sales Product Item -->
+                <div class="product-item-container">
+                    <img class="mb-14px" src="img/product-img/product-2.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <div class="flex items-center">
+                                <span class="product-price-style">$20</span>
+                                <span
+                                    class="line-through text-cool-gray font-inter text-sm leading-110% ml-1">$30</span>
+                            </div>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="sales-product-tag-container">
+                        <span class="product-tag-text-style">Sales</span>
+                    </div>
+                </div>
+                <div class="product-item-container">
+                    <img class="mb-14px" src="img/product-img/product-3.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <div class="flex items-center">
+                                <span class="product-price-style">$20</span>
+                                <span
+                                    class="line-through text-cool-gray font-inter text-sm leading-110% ml-1">$30</span>
+                            </div>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="sales-product-tag-container">
+                        <span class="product-tag-text-style">Sales</span>
+                    </div>
+                </div>
+                <div class="product-item-container">
+                    <img class="mb-14px" src="img/product-img/product-4.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <div class="flex items-center">
+                                <span class="product-price-style">$20</span>
+                                <span
+                                    class="line-through text-cool-gray font-inter text-sm leading-110% ml-1">$30</span>
+                            </div>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="sales-product-tag-container">
+                        <span class="product-tag-text-style">Sales</span>
+                    </div>
+                </div>
+                <div class="product-item-container">
+                    <img class="mb-14px" src="img/product-img/product-5.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <div class="flex items-center">
+                                <span class="product-price-style">$20</span>
+                                <span
+                                    class="line-through text-cool-gray font-inter text-sm leading-110% ml-1">$30</span>
+                            </div>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="sales-product-tag-container">
+                        <span class="product-tag-text-style">Sales</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dynamicHidden featured-products hidden">
+            <!-- 1st line -->
+            <div class="flex items-center justify-center space-x-6">
+                <!-- New Product Item -->
+                <div class="product-item-container">
+                    <img class="mb-14px" src="img/product-img/product-1.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="product-tag-container">
+                        <div class="new-product-tag-container">
+                            <span class="product-tag-text-style">New</span>
+                        </div>
+                        <div class="product-love-favorite-style"><img src="img/heart-of-product.svg"
+                                alt="choose-favorite-product"></div>
+                    </div>
+                </div>
+
+                <!-- Sales Product Item -->
+                <div class="product-item-container">
+                    <img class="mb-14px" src="img/product-img/product-2.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <div class="flex items-center">
+                                <span class="product-price-style">$20</span>
+                                <span
+                                    class="line-through text-cool-gray font-inter text-sm leading-110% ml-1">$30</span>
+                            </div>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="sales-product-tag-container">
+                        <span class="product-tag-text-style">Sales</span>
+                    </div>
+                </div>
+
+                <!-- Regular Product Item -->
+                <div class="product-item-container">
+                    <img class="mb-14px" src="img/product-img/product-5.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item-container">
+                    <img class="mb-14px" src="img/product-img/product-6.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd line -->
+            <div class="flex items-center justify-center mt-10 space-x-6">
+                <!-- Regular Product Item -->
+                <div class="product-item-container">
+                    <img class="mb-14px" src="img/product-img/product-3.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item-container">
+                    <img class="mb-14px" src="img/product-img/product-7.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="w-full py-20 bg-light-gray mb-20">
+        <div class="w-main-width mx-auto">
+            <div class="flex items-center justify-between mb-10">
+                <h2 class="h2-style">What client says about us</h2>
+                <div class="flex items-center justify-between">
+                    <button class="arrow-style rotate-180 mr-[18px]" onclick="prevTestimonialSlide()">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.5 7.5L20 12M20 12L15.5 16.5M20 12H4" stroke="red" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button class="arrow-style" onclick="nextTestimonialSlide()">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.5 7.5L20 12M20 12L15.5 16.5M20 12H4" stroke="red" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="testimonial-container">
+                <div class="testimonial-slider">
+                    <div class="testimonial-slide">
+                        <div class="testimonial-text-style">
+                            <p class="font-inter text-xl text-dim-gray leading-150% ml-6">“Lorem ipsum dolor sit
+                                amet,
+                                consectetur
+                                adipiscing elit. Vivamus sit amet mi nec massa tincidunt blandit
+                                et
+                                eu sem. Maecenas laoreet ultrices diam dignissim posuere. Aenean ultrices dui at
+                                ipsum
+                                sagittis,
+                                pharetra
+                                lacinia dui faucibus. In ac bibendum ex. Aenean dolor massa, euismod sit amet
+                                suscipit
+                                et“
+                            </p>
+                        </div>
+                        <div class="testimonial-user-container-style">
+                            <div class="testimonial-user--inner-container-style">
+                                <img src="img/kristin.png" alt="kristin">
+                                <div class="ml-3">
+                                    <h4 class="font-inter font-medium text-xl text-secondary leading-140%">Kristin
+                                        Watson
+                                    </h4>
+                                    <span class="font-inter text-cool-gray leading-140%">Fashion Designer</span>
+                                </div>
+                            </div>
+                            <img src="img/double-qutoes.svg" alt="double-quotes">
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-text-style">
+                            <p class="font-inter text-xl text-dim-gray leading-150% ml-6">“Nullam sapien elit, dignissim
+                                eu viverra et, scelerisque et felis. Aliquam egestas dui elit, quis tincidunt lacus
+                                aliquam et. Duis nulla velit, dignissim ut odio ac, eleifend luctus leo. Ut ac imperdiet
+                                velit. Aliquam semper ex in volutpat rutrum.
+                            </p>
+                        </div>
+                        <div class="testimonial-user-container-style">
+                            <div class="testimonial-user--inner-container-style">
+                                <img src="img/estar-howard.png" alt="howard">
+                                <div class="ml-3">
+                                    <h4 class="font-inter font-medium text-xl text-secondary leading-140%">Esther Howard
+                                    </h4>
+                                    <span class="font-inter text-cool-gray leading-140%">Fashion Designer</span>
+                                </div>
+                            </div>
+                            <img src="img/double-qutoes.svg" alt="double-quotes">
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-text-style">
+                            <p class="font-inter text-xl text-dim-gray leading-150% ml-6">“Lorem ipsum dolor sit
+                                amet,
+                                consectetur
+                                adipiscing elit. Vivamus sit amet mi nec massa tincidunt blandit
+                                et
+                                eu sem. Maecenas laoreet ultrices diam dignissim posuere. Aenean ultrices dui at
+                                ipsum
+                                sagittis,
+                                pharetra
+                                lacinia dui faucibus. In ac bibendum ex. Aenean dolor massa, euismod sit amet
+                                suscipit
+                                et“
+                            </p>
+                        </div>
+                        <div class="testimonial-user-container-style">
+                            <div class="testimonial-user--inner-container-style">
+                                <img src="img/kristin.png" alt="kristin">
+                                <div class="ml-3">
+                                    <h4 class="font-inter font-medium text-xl text-secondary leading-140%">Kristin
+                                        Watson
+                                    </h4>
+                                    <span class="font-inter text-cool-gray leading-140%">Fashion Designer</span>
+                                </div>
+                            </div>
+                            <img src="img/double-qutoes.svg" alt="double-quotes">
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-text-style">
+                            <p class="font-inter text-xl text-dim-gray leading-150% ml-6">“Nullam sapien elit, dignissim
+                                eu viverra et, scelerisque et felis. Aliquam egestas dui elit, quis tincidunt lacus
+                                aliquam et. Duis nulla velit, dignissim ut odio ac, eleifend luctus leo. Ut ac imperdiet
+                                velit. Aliquam semper ex in volutpat rutrum.
+                            </p>
+                        </div>
+                        <div class="testimonial-user-container-style">
+                            <div class="testimonial-user--inner-container-style">
+                                <img src="img/estar-howard.png" alt="howard">
+                                <div class="ml-3">
+                                    <h4 class="font-inter font-medium text-xl text-secondary leading-140%">Esther Howard
+                                    </h4>
+                                    <span class="font-inter text-cool-gray leading-140%">Fashion Designer</span>
+                                </div>
+                            </div>
+                            <img src="img/double-qutoes.svg" alt="double-quotes">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recently Added Products -->
+    <div class="w-main-width mx-auto mb-20">
+        <div class="flex items-center justify-between mb-10">
+            <h2 class="h2-style">Recently Added</h2>
+            <div class="flex items-center justify-between">
+                <button class="arrow-style rotate-180 mr-[18px]" onclick="prevRecentProductSlide()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.5 7.5L20 12M20 12L15.5 16.5M20 12H4" stroke="red" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="arrow-style" onclick="nextRecentProductSlide()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.5 7.5L20 12M20 12L15.5 16.5M20 12H4" stroke="red" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="feature-product-container">
+            <div class="recently-product-slider">
+                <!-- New Product Item -->
+                <div class="product-item-container feature-slide ">
+                    <img class="mb-14px" src="img/product-img/product-1.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="product-tag-container">
+                        <div class="new-product-tag-container">
+                            <span class="product-tag-text-style">New</span>
+                        </div>
+                        <div class="product-love-favorite-style"><img src="img/heart-of-product.svg"
+                                alt="choose-favorite-product"></div>
+                    </div>
+                </div>
+                <!-- Sales Product Item -->
+                <div class="product-item-container feature-slide">
+                    <img class="mb-14px" src="img/product-img/product-2.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <div class="flex items-center">
+                                <span class="product-price-style">$20</span>
+                                <span
+                                    class="line-through text-cool-gray font-inter text-sm leading-110% ml-1">$30</span>
+                            </div>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="sales-product-tag-container">
+                        <span class="product-tag-text-style">Sales</span>
+                    </div>
+                </div>
+                <!-- Regular Product Item -->
+                <div class="product-item-container feature-slide">
+                    <img class="mb-14px" src="img/product-img/product-3.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item-container feature-slide">
+                    <img class="mb-14px" src="img/product-img/product-4.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item-container feature-slide">
+                    <img class="mb-14px" src="img/product-img/product-5.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item-container feature-slide">
+                    <img class="mb-14px" src="img/product-img/product-6.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item-container feature-slide">
+                    <img class="mb-14px" src="img/product-img/product-7.png" alt="Product">
+                    <div class="product-item-inner-container">
+                        <div class="product-item-text-container">
+                            <span class="product-item-name-style">Library Stool Chair</span>
+                            <span class="product-price-style">$20</span>
+                        </div>
+                        <div class="product-cart-icon-style">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 0.75L2.83 1.11L3.793 12.583C3.82999 13.0345 4.03584 13.4554 4.36948 13.7618C4.70312 14.0682 5.14002 14.2375 5.593 14.236H16.503C16.9367 14.2365 17.3561 14.0803 17.6838 13.7963C18.0116 13.5122 18.2258 13.1194 18.287 12.69L19.237 6.132C19.2623 5.95759 19.253 5.7799 19.2096 5.60909C19.1662 5.43828 19.0896 5.2777 18.9841 5.13653C18.8786 4.99536 18.7463 4.87637 18.5947 4.78637C18.4432 4.69637 18.2754 4.63711 18.101 4.612C18.037 4.605 3.164 4.6 3.164 4.6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.125 8.29498H14.898" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.15401 17.703C5.22735 17.6998 5.30056 17.7116 5.36924 17.7375C5.43793 17.7634 5.50066 17.8029 5.55366 17.8537C5.60667 17.9044 5.64885 17.9654 5.67766 18.0329C5.70648 18.1004 5.72133 18.1731 5.72133 18.2465C5.72133 18.3199 5.70648 18.3925 5.67766 18.46C5.64885 18.5276 5.60667 18.5885 5.55366 18.6393C5.50066 18.6901 5.43793 18.7296 5.36924 18.7555C5.30056 18.7814 5.22735 18.7931 5.15401 18.79C5.0139 18.784 4.88152 18.7241 4.78451 18.6228C4.68749 18.5216 4.63333 18.3867 4.63333 18.2465C4.63333 18.1062 4.68749 17.9714 4.78451 17.8702C4.88152 17.7689 5.0139 17.709 5.15401 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.435 17.703C16.5795 17.703 16.7181 17.7604 16.8204 17.8626C16.9226 17.9648 16.98 18.1035 16.98 18.248C16.98 18.3925 16.9226 18.5312 16.8204 18.6334C16.7181 18.7356 16.5795 18.793 16.435 18.793C16.2904 18.793 16.1518 18.7356 16.0496 18.6334C15.9474 18.5312 15.89 18.3925 15.89 18.248C15.89 18.1035 15.9474 17.9648 16.0496 17.8626C16.1518 17.7604 16.2904 17.703 16.435 17.703Z"
+                                    fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="w-full border pt-20 pb-[3.75rem]">
+        <div class="flex items-start w-main-width mx-auto">
+            <div class="w-[26.51%] mr-[7.349%]">
+                <a href="#homepage" class="flex items-center mb-6">
+                    <img src="img/logo-icon.svg" alt="Logo">
+                    <span
+                        class="font-inter font-semibold text-[1.625rem] text-secondary leading-120% ml-2">Comforty</span>
+                </a>
+                <p class="font-inter text-base text-cool-gray leading-6 mb-6">Vivamus tristique odio sit amet
+                    velit semper, eu posuere turpis interdum.
+                    Cras egestas purus </p>
+                <div class="flex items-center space-x-1">
+                    <svg class="fill-dim-gray rounded-full hover:border hover:border-primary hover:fill-primary"
+                        width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1_1873)">
+                            <path
+                                d="M27 19C27 14.5817 23.4183 11 19 11C14.5817 11 11 14.5817 11 19C11 22.993 13.9253 26.3027 17.75 26.9027V21.3127H15.7187V19H17.75V17.2373C17.75 15.2327 18.9443 14.125 20.7717 14.125C21.6467 14.125 22.5623 14.2813 22.5623 14.2813V16.25H21.5537C20.56 16.25 20.25 16.8667 20.25 17.5V19H22.4687L22.114 21.3127H20.25V26.9027C24.0747 26.3027 27 22.9927 27 19Z" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_1_1873">
+                                <rect width="16" height="16" transform="translate(11 11)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <svg class="fill-dim-gray rounded-full hover:border hover:border-primary hover:fill-primary"
+                        width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1_1878)">
+                            <path
+                                d="M16.0333 25.5001C22.07 25.5001 25.3723 20.4981 25.3723 16.1615C25.3723 16.0208 25.369 15.8771 25.3627 15.7365C26.0052 15.2718 26.5596 14.6962 27 14.0368C26.4017 14.3028 25.7667 14.4768 25.116 14.5521C25.8008 14.1417 26.3136 13.4968 26.5593 12.7371C25.915 13.119 25.2104 13.3884 24.4757 13.5338C23.9807 13.0076 23.3261 12.6591 22.6132 12.5423C21.9002 12.4255 21.1687 12.5468 20.5316 12.8875C19.8946 13.2282 19.3875 13.7694 19.0889 14.4272C18.7903 15.0851 18.7168 15.823 18.8797 16.5268C17.575 16.4613 16.2986 16.1224 15.1334 15.5321C13.9681 14.9417 12.9398 14.113 12.1153 13.0998C11.6963 13.8223 11.5681 14.6772 11.7567 15.4909C11.9454 16.3045 12.4368 17.0158 13.131 17.4801C12.6098 17.4636 12.0999 17.3233 11.6437 17.0708V17.1115C11.6432 17.8696 11.9053 18.6045 12.3855 19.1913C12.8656 19.7781 13.5341 20.1805 14.2773 20.3301C13.7946 20.4622 13.288 20.4815 12.7967 20.3865C13.0064 21.0385 13.4145 21.6087 13.964 22.0176C14.5135 22.4266 15.1769 22.6537 15.8617 22.6675C15.1805 23.2026 14.4005 23.5981 13.5662 23.8313C12.732 24.0644 11.8599 24.1306 11 24.0261C12.5019 24.9895 14.249 25.5012 16.0333 25.5001Z" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_1_1878">
+                                <rect width="16" height="16" fill="white" transform="translate(11 11)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <svg class="fill-dim-gray rounded-full hover:border hover:border-primary hover:fill-primary"
+                        width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21.6667 15.6667C21.6667 15.4899 21.7369 15.3203 21.8619 15.1953C21.987 15.0702 22.1565 15 22.3334 15C22.5102 15 22.6797 15.0702 22.8048 15.1953C22.9298 15.3203 23 15.4899 23 15.6667C23 15.8435 22.9298 16.013 22.8048 16.1381C22.6797 16.2631 22.5102 16.3333 22.3334 16.3333C22.1565 16.3333 21.987 16.2631 21.8619 16.1381C21.7369 16.013 21.6667 15.8435 21.6667 15.6667Z"
+                            fill="#636270" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19 15.8335C18.1602 15.8335 17.3547 16.1671 16.7609 16.761C16.167 17.3549 15.8334 18.1603 15.8334 19.0002C15.8334 19.84 16.167 20.6455 16.7609 21.2393C17.3547 21.8332 18.1602 22.1668 19 22.1668C19.8399 22.1668 20.6453 21.8332 21.2392 21.2393C21.8331 20.6455 22.1667 19.84 22.1667 19.0002C22.1667 18.1603 21.8331 17.3549 21.2392 16.761C20.6453 16.1671 19.8399 15.8335 19 15.8335ZM16.8334 19.0002C16.8334 18.4255 17.0616 17.8744 17.468 17.4681C17.8743 17.0618 18.4254 16.8335 19 16.8335C19.5747 16.8335 20.1258 17.0618 20.5321 17.4681C20.9384 17.8744 21.1667 18.4255 21.1667 19.0002C21.1667 19.5748 20.9384 20.1259 20.5321 20.5322C20.1258 20.9386 19.5747 21.1668 19 21.1668C18.4254 21.1668 17.8743 20.9386 17.468 20.5322C17.0616 20.1259 16.8334 19.5748 16.8334 19.0002Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M22.5054 12.8888C20.1756 12.6305 17.8244 12.6305 15.4947 12.8888C14.1534 13.0388 13.07 14.0954 12.9127 15.4434C12.6363 17.8065 12.6363 20.1937 12.9127 22.5568C13.07 23.9048 14.1527 24.9614 15.4947 25.1114C17.8054 25.3694 20.1947 25.3694 22.5054 25.1114C23.8467 24.9614 24.93 23.9048 25.0874 22.5568C25.3638 20.1937 25.3638 17.8065 25.0874 15.4434C24.93 14.0954 23.8474 13.0388 22.5054 12.8888ZM15.6054 13.8821C17.8616 13.632 20.1385 13.632 22.3947 13.8821C23.2813 13.9821 23.9914 14.6814 24.0947 15.5601C24.362 17.8456 24.362 20.1546 24.0947 22.4401C23.9914 23.3188 23.2813 24.0188 22.3947 24.1174C20.1385 24.3675 17.8616 24.3675 15.6054 24.1174C14.7187 24.0188 14.0087 23.3188 13.9054 22.4401C13.638 20.1546 13.638 17.8456 13.9054 15.5601C14.0087 14.6814 14.7187 13.9814 15.6054 13.8828V13.8821Z" />
+                    </svg>
+                    <svg class="fill-dim-gray rounded-full hover:border hover:border-primary hover:fill-primary"
+                        width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1_1891)">
+                            <path
+                                d="M19 11C14.5813 11 11 14.5813 11 19C11 22.3907 13.1093 25.2843 16.0843 26.45C16.0157 25.8157 15.95 24.8467 16.1127 24.1563C16.2593 23.5313 17.05 20.1813 17.05 20.1813C17.05 20.1813 16.8093 19.703 16.8093 18.9937C16.8093 17.8813 17.453 17.05 18.256 17.05C18.9373 17.05 19.2687 17.5627 19.2687 18.178C19.2687 18.8657 18.8313 19.8907 18.6063 20.8407C18.4187 21.6373 19.0063 22.2873 19.7907 22.2873C21.2123 22.2873 22.3063 20.7873 22.3063 18.625C22.3063 16.7093 20.9313 15.3687 18.9657 15.3687C16.6907 15.3687 15.353 17.075 15.353 18.8407C15.353 19.528 15.6187 20.2657 15.95 20.6657C16.0157 20.7437 16.025 20.8157 16.0063 20.8937C15.947 21.147 15.8097 21.6903 15.7843 21.8C15.75 21.9467 15.6687 21.978 15.5157 21.9063C14.5157 21.4407 13.8907 19.9813 13.8907 18.8063C13.8907 16.2813 15.725 13.9657 19.175 13.9657C21.95 13.9657 24.1063 15.9437 24.1063 18.5873C24.1063 21.344 22.3687 23.5623 19.9563 23.5623C19.147 23.5623 18.3843 23.1407 18.122 22.6437C18.122 22.6437 17.722 24.172 17.625 24.547C17.4437 25.2403 16.9563 26.1127 16.6313 26.6437C17.3986 26.8804 18.1971 27.0005 19 27C23.4187 27 27 23.4187 27 19C27 14.5813 23.4187 11 19 11Z" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_1_1891">
+                                <rect width="16" height="16" fill="white" transform="translate(11 11)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <svg class="fill-dim-gray rounded-full hover:border hover:border-primary hover:fill-primary"
+                        width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M26.8407 15.7998C26.8407 15.7998 26.6843 14.6965 26.203 14.2125C25.5937 13.5748 24.9123 13.5718 24.6 13.5342C22.3627 13.3718 19.0033 13.3718 19.0033 13.3718H18.9967C18.9967 13.3718 15.6377 13.3718 13.4 13.5342C13.0873 13.5718 12.4063 13.5748 11.7967 14.2125C11.316 14.6965 11.1627 15.7998 11.1627 15.7998C11.1627 15.7998 11 17.0965 11 18.3905V19.6028C11 20.8968 11.1593 22.1935 11.1593 22.1935C11.1593 22.1935 11.3157 23.2968 11.7937 23.7812C12.403 24.4185 13.203 24.3968 13.5593 24.4655C14.8407 24.5875 19 24.6248 19 24.6248C19 24.6248 22.3623 24.6185 24.6 24.4592C24.9127 24.4218 25.5937 24.4185 26.2033 23.7812C26.6843 23.2968 26.8407 22.1935 26.8407 22.1935C26.8407 22.1935 27 20.9002 27 19.6032V18.3908C27 17.0972 26.8407 15.8002 26.8407 15.8002V15.7998ZM17.3467 21.0748V16.5782L21.6683 18.8342L17.3467 21.0748Z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="w-[7.95%] mr-[9.053%]">
+                <h3 class="font-inter font-medium text-sm text-cool-gray leading-110% mb-5">CATEGORY</h3>
+                <ul class="space-y-3">
+                    <li class="footer-menu-style">Sofa</li>
+                    <li class="footer-menu-style">
+                        Armchair</li>
+                    <li class="footer-menu-style">
+                        Wing Chair</li>
+                    <li class="footer-menu-style">
+                        Desk Chair</li>
+                    <li class="footer-menu-style">
+                        Wooden Chair</li>
+                    <li class="footer-menu-style">
+                        Park Bench</li>
+                </ul>
+            </div>
+            <div class="w-[11.81%] mr-[5.189%]">
+                <h3 class="font-inter font-medium text-sm text-cool-gray leading-110% mb-5">SUPPORT</h3>
+                <ul class="space-y-3">
+                    <li class="footer-menu-style">Help & Support</li>
+                    <li class="footer-menu-style">
+                        Tearms & Conditions</li>
+                    <li class="footer-menu-style">
+                        Privacy Policy</li>
+                    <li class="footer-menu-style">
+                        Help</li>
+                </ul>
+            </div>
+            <div class="w-[32.12%]">
+                <h3 class="font-inter font-medium text-sm text-cool-gray leading-110% mb-5">NEWSLETTER</h3>
+                <form class="flex mb-[0.9375rem]">
+                    <input type="email" placeholder="Your email"
+                        class="w-[67.21%] border rounded-lg px-5 focus:outline-none">
+                    <button
+                        class="font-inter font-semibold text-base text-white leading-110% py-[0.888rem] px-[1.536rem] bg-tertiary rounded-lg ml-3">Subscribe</button>
+                </form>
+                <p class="font-inter text-[0.9375rem] text-cool-gray leading-150%">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Nullam tincidunt erat enim.</p>
+            </div>
+        </div>
+    </div>
+    <div class="w-main-width mx-auto">
+        <div class="flex items-center justify-between py-6">
+            <div class="font-poppins text-sm">
+                <span class="text-cool-gray">@ 2024 - Comforty - Designed & Develop by</span>
+                <span class="text-secondary">X</span>
+            </div>
+            <img src="img/Logos.svg" alt="logos">
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
